@@ -1,0 +1,138 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "inotebook",
+    "dateExported": "2023-09-28T10:53:38.946Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "fce5e9cd-574e-4467-a281-6f7626ef828a",
+            "name": "authentication",
+            "containerId": "",
+            "created": "2023-09-28T06:09:23.264Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e84a65a2-6e0f-4371-bac5-6a179d763192",
+            "name": "Notes",
+            "containerId": "",
+            "created": "2023-09-28T09:37:26.943Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "4fa0b4e5-1018-4ab7-84d9-15a4d227d6bb",
+            "colId": "3194e410-b262-4bd0-a8bf-95d189bd13f8",
+            "containerId": "fce5e9cd-574e-4467-a281-6f7626ef828a",
+            "name": "create a new user",
+            "url": "localhost:5000/api/auth/createUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-28T06:09:33.189Z",
+            "modified": "2023-09-28T06:52:03.863Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"hrkhrk3\",\n  \"email\":\"hello3@gmail.com\",\n  \"password\":\"kuchbhirakhlo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "326a95a4-f8f6-47e8-9a25-9cb7c8dee962",
+            "colId": "3194e410-b262-4bd0-a8bf-95d189bd13f8",
+            "containerId": "fce5e9cd-574e-4467-a281-6f7626ef828a",
+            "name": "user login using creds",
+            "url": "localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-28T07:27:53.443Z",
+            "modified": "2023-09-28T07:35:02.741Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"hello2@gmail.com\",\n  \"password\":\"kuchbhirakhlo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "79dd90c3-29d4-4dfe-ad4e-47e7a3bae35d",
+            "colId": "3194e410-b262-4bd0-a8bf-95d189bd13f8",
+            "containerId": "fce5e9cd-574e-4467-a281-6f7626ef828a",
+            "name": "get user data",
+            "url": "localhost:5000/api/auth/getuser",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-28T09:32:56.211Z",
+            "modified": "2023-09-28T09:35:50.332Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxNTIyNTQ0NjVkODEwMzgyNjNlMGMxIn0sImlhdCI6MTY5NTg4NjcyNn0.fuUe9V89S5iCySZYFhd-8YQTr2YryAhj-PzhxG9eoGU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "07400ba9-4f62-49d6-be16-572c0176de1e",
+            "colId": "3194e410-b262-4bd0-a8bf-95d189bd13f8",
+            "containerId": "e84a65a2-6e0f-4371-bac5-6a179d763192",
+            "name": "fetch all nodes",
+            "url": "localhost:5000/api/notes/fetchallnotes",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-09-28T09:38:50.662Z",
+            "modified": "2023-09-28T10:10:45.593Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxNTIyNTQ0NjVkODEwMzgyNjNlMGMxIn0sImlhdCI6MTY5NTg4NjcyNn0.fuUe9V89S5iCySZYFhd-8YQTr2YryAhj-PzhxG9eoGU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "65c581d5-fb5a-4092-82f6-44fd71f4ae8b",
+            "colId": "3194e410-b262-4bd0-a8bf-95d189bd13f8",
+            "containerId": "e84a65a2-6e0f-4371-bac5-6a179d763192",
+            "name": "add note",
+            "url": "localhost:5000/api/notes/addnote",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-09-28T09:56:53.430Z",
+            "modified": "2023-09-28T10:16:38.640Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjUxNTIyNTQ0NjVkODEwMzgyNjNlMGMxIn0sImlhdCI6MTY5NTg4NjcyNn0.fuUe9V89S5iCySZYFhd-8YQTr2YryAhj-PzhxG9eoGU"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"second note\",\n  \"description\":\"acha kaam chal rha\",\n  \"tag\":\"personal\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
